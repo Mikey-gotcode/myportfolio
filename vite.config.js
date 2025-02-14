@@ -10,5 +10,8 @@ export default defineConfig({
   
   
   ],
-  base:'/myportfolio/',
+  base:"./",
+  build:{
+    outDir:"dist"
+  }
 })

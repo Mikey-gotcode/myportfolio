@@ -28,37 +28,37 @@
       id: 1,
       title: "Design Project",
       category: "design",
-      img: "/src/assets/img/p1.png"
+      img: "../../assets/img/p1.png"
     },
     {
       id: 2,
       title: "Web Development",
       category: "development",
-      img: "/src/assets/img/p2.png"
+      img: "../../assets/img/p2.png"
     },
     {
       id: 3,
       title: "Marketing Campaign",
       category: "marketing",
-      img: "/src/assets/img/p3.png"
+      img: "../../assets/img/p3.png"
     },
     {
       id: 4,
       title: "UX/UI Design",
       category: "design",
-      img: "/src/assets/img/p3.png"
+      img: "../../assets/img/p3.png"
     },
     {
       id: 5,
       title: "Backend System",
       category: "development",
-      img: "/src/assets/img/p5.png"
+      img: "../../assets/img/p5.png"
     },
     {
       id: 6,
       title: "SEO Optimization",
       category: "marketing",
-      img: "/src/assets/img/p6.png"
+      img: "../../assets/img/p6.png"
     }
   ]);
 

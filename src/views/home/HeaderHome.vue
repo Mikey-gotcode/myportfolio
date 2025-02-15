@@ -4,7 +4,7 @@ import { faLinkedin, faTwitter, faInstagram, faGithub } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { onMounted, ref } from 'vue';
 import Typed from 'typed.js';
-import HeaderBackground from '../../assets/img/header-bg.jpeg'
+//import HeaderBackground from '../../assets/img/header-bg.jpeg'
 
 library.add(faLinkedin, faTwitter, faInstagram, faGithub);
 
@@ -13,7 +13,7 @@ const typedRef = ref(null);
 // Function to download the resume
 const downloadResume = () => {
   const link = document.createElement("a");
-  link.href = "/public/Michael irungu CV copy.docx"; // Ensure the resume is placed in the public folder
+  link.href = "/dist/Michael irungu CV copy.docx"; // Ensure the resume is placed in the public folder
   link.download = "Michael_Irungu_Resume.pdf"; // Rename the file on download
   document.body.appendChild(link);
   link.click();
@@ -37,7 +37,7 @@ onMounted(() => {
 
 <template>
   <header 
-    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white bg-[url(/assets/img/header-bg.jpeg)]"
+    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white bg-[url('/assets/img/header-bg.jpeg')]"
     
   >
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>

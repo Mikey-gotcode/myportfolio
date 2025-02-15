@@ -124,7 +124,7 @@
           <Slide v-for="item in filteredPortfolio" :key="item.id">
             <RouterLink :to="`/portfolio/${item.id}`"
               class="block bg-white rounded-lg shadow-lg overflow-hidden group relative">
-              <img :src="item.img" :alt="item.title"
+              <img :src="require(item.img)" :alt="item.title"
                 class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">{{ item.title }}</h3>

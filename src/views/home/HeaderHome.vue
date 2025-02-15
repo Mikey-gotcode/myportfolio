@@ -4,6 +4,7 @@ import { faLinkedin, faTwitter, faInstagram, faGithub } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { onMounted, ref } from 'vue';
 import Typed from 'typed.js';
+import HeaderBackground from '../../assets/img/header-bg.jpeg'
 
 library.add(faLinkedin, faTwitter, faInstagram, faGithub);
 
@@ -37,7 +38,7 @@ onMounted(() => {
 <template>
   <header 
     class="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/header-bg.jpeg');"
+    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(HeaderBackground)"
   >
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     

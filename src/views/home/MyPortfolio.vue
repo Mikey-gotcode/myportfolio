@@ -1,80 +1,46 @@
 <script setup>
-  import {
-    ref,
-    computed
-  } from 'vue';
-  import {
-    Carousel,
-    Slide
-  } from 'vue3-carousel/dist/carousel.mjs';
-  import 'vue3-carousel/dist/carousel.css';
-  import {
-    RouterLink
-  } from 'vue-router';
-  import {
-    useWindowSize
-  } from '@vueuse/core'
+import { ref, computed } from 'vue';
+import { Carousel, Slide } from 'vue3-carousel/dist/carousel.mjs';
+import 'vue3-carousel/dist/carousel.css';
+import { RouterLink } from 'vue-router';
+import { useWindowSize } from '@vueuse/core';
 
-  // Get the window width
-  const {
-    width
-  } = useWindowSize()
+// Import images
+import img1 from '../../assets/img/p1.png';
+import img2 from '../../assets/img/p2.png';
+import img3 from '../../assets/img/p3.png';
+import img4 from '../../assets/img/p4.png';
+import img5 from '../../assets/img/p5.png';
+import img6 from '../../assets/img/p6.png';
 
-  // Check if screen is large
-  const isLargeScreen = computed(() => width.value >= 1024) // Tailwind 'lg' breakpoint is 1024px
+// Get window width
+const { width } = useWindowSize();
+const isLargeScreen = computed(() => width.value >= 1024);
 
+// Store images in the JSON object as imported values
+const portfolioItems = ref([
+  { id: 1, title: "Design Project", category: "design", img: img1 },
+  { id: 2, title: "Web Development", category: "development", img: img2 },
+  { id: 3, title: "Marketing Campaign", category: "marketing", img: img3 },
+  { id: 4, title: "UX/UI Design", category: "design", img: img4 },
+  { id: 5, title: "Backend System", category: "development", img: img5 },
+  { id: 6, title: "SEO Optimization", category: "marketing", img: img6 }
+]);
 
-  const portfolioItems = ref([{
-      id: 1,
-      title: "Design Project",
-      category: "design",
-      img: "../../assets/img/p1.png"
-    },
-    {
-      id: 2,
-      title: "Web Development",
-      category: "development",
-      img: "../../assets/img/p2.png"
-    },
-    {
-      id: 3,
-      title: "Marketing Campaign",
-      category: "marketing",
-      img: "../../assets/img/p3.png"
-    },
-    {
-      id: 4,
-      title: "UX/UI Design",
-      category: "design",
-      img: "../../assets/img/p3.png"
-    },
-    {
-      id: 5,
-      title: "Backend System",
-      category: "development",
-      img: "../../assets/img/p5.png"
-    },
-    {
-      id: 6,
-      title: "SEO Optimization",
-      category: "marketing",
-      img: "../../assets/img/p6.png"
-    }
-  ]);
+const activeFilter = ref("all");
+const searchTerm = ref("");
 
-  const activeFilter = ref("all");
-  const searchTerm = ref("");
-
-  const filteredPortfolio = computed(() => {
-    return portfolioItems.value.filter(item => {
-      const matchesFilter = activeFilter.value === "all" || item.category === activeFilter.value;
-      const matchesSearch = item.title.toLowerCase().includes(searchTerm.value.toLowerCase());
-      return matchesFilter && matchesSearch;
-    });
+const filteredPortfolio = computed(() => {
+  return portfolioItems.value.filter(item => {
+    const matchesFilter = activeFilter.value === "all" || item.category === activeFilter.value;
+    const matchesSearch = item.title.toLowerCase().includes(searchTerm.value.toLowerCase());
+    return matchesFilter && matchesSearch;
   });
+});
 
-  const categories = ref(["all", "design", "development", "marketing"]);
+const categories = ref(["all", "design", "development", "marketing"]);
 </script>
+
 
 <template>
   <section class="bg-gray-100 py-12 px-4 md:px-6 lg:px-12" id="portfolio">
@@ -124,7 +90,7 @@
           <Slide v-for="item in filteredPortfolio" :key="item.id">
             <RouterLink :to="`/portfolio/${item.id}`"
               class="block bg-white rounded-lg shadow-lg overflow-hidden group relative">
-              <img :src="require(item.img)" :alt="item.title"
+              <img :src="item.img" :alt="item.title"
                 class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">{{ item.title }}</h3>

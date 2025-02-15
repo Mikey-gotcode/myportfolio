@@ -37,8 +37,8 @@ onMounted(() => {
 
 <template>
   <header 
-    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(HeaderBackground)"
+    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white bg-[url(/assets/img/header-bg.jpeg)]"
+    
   >
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     

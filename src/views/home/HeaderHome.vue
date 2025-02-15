@@ -13,7 +13,7 @@ const typedRef = ref(null);
 // Function to download the resume
 const downloadResume = () => {
   const link = document.createElement("a");
-  link.href = "/dist/Michael irungu CV copy.docx"; // Ensure the resume is placed in the public folder
+  link.href = "/Michael irungu CV copy.docx"; // Ensure the resume is placed in the public folder
   link.download = "Michael_Irungu_Resume.pdf"; // Rename the file on download
   document.body.appendChild(link);
   link.click();

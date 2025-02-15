@@ -24,27 +24,32 @@
           <!-- Text Content -->
           <div class="text-left max-w-lg px-5 mt-6 md:mt-0">
             <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-              UI/UX Designer & Web Developer
+              Fullstack Developer
             </h3>
             <p class="text-gray-600 leading-relaxed text-sm md:text-base lg:text-lg">
-              Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod.
-              Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum.
-              Amet dolor stet lorem diam dolor justo et dolor dolor dolor.
+              I'm a full-stack developer with experience in MERN, Kotlin, and Laravel. I build interactive web and
+              mobile applications, integrating real-time data, state management, and scalable backend services. My
+              projects range from mapping applications with WebSockets to e-commerce platforms and financial transaction
+              systems. I enjoy problem-solving, optimizing performance, and experimenting with new tech stacks to create
+              efficient and user-friendly solutions.
             </p>
 
             <!-- Info Grid -->
             <div class="flex flex-col md:flex-row justify-start mt-6 text-sm md:text-base gap-y-4">
               <div class="w-full md:w-1/2">
-                <h6 class="font-medium text-gray-700">Name: <span class="text-gray-600">Kate Winslet</span></h6>
-                <h6 class="font-medium text-gray-700">Birthday: <span class="text-gray-600">1 April 1990</span></h6>
-                <h6 class="font-medium text-gray-700">Degree: <span class="text-gray-600">Master</span></h6>
-                <h6 class="font-medium text-gray-700">Experience: <span class="text-gray-600">10 Years</span></h6>
+                <h6 class="font-medium text-gray-700">Name: <span class="text-gray-600">Michael Irungu Mwangi</span>
+                </h6>
+                <h6 class="font-medium text-gray-700">Birthday: <span class="text-gray-600">26 February 2003</span></h6>
+                <h6 class="font-medium text-gray-700">Degree: <span class="text-gray-600">Bachelor of Informatics and
+                    Computer Science</span></h6>
+                <h6 class="font-medium text-gray-700">Experience: <span class="text-gray-600">3 Years</span></h6>
               </div>
               <div class="w-full md:w-1/2">
-                <h6 class="font-medium text-gray-700">Phone: <span class="text-gray-600">+012 345 6789</span></h6>
-                <h6 class="font-medium text-gray-700">Email: <span class="text-gray-600">info@example.com</span></h6>
-                <h6 class="font-medium text-gray-700">Address: <span class="text-gray-600">123 Street, New York,
-                    USA</span></h6>
+                <h6 class="font-medium text-gray-700">Phone: <span class="text-gray-600">+254 710773514</span></h6>
+                <h6 class="font-medium text-gray-700">Email: <span
+                    class="text-gray-600">Michaelirungu042@gmailcom.</span></h6>
+                <h6 class="font-medium text-gray-700">Address: <span class="text-gray-600">P.O Box 136 00621 ,
+                    Kenya</span></h6>
                 <h6 class="font-medium text-gray-700">Freelance: <span class="text-gray-600">Available</span></h6>
               </div>
             </div>

@@ -37,8 +37,8 @@ onMounted(() => {
 
 <template>
   <header 
-    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white bg-[url('/header-bg.jpeg')]"
-    
+    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white "
+    style="background-image: url('/header-bg.jpeg');"
   >
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     

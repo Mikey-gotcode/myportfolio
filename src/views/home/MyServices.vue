@@ -91,10 +91,10 @@ const isLargeScreen = computed(() => width.value >= 1024) // Tailwind 'lg' break
             </div>
             <h4 class="text-xl font-semibold mb-3">{{ service.title }}</h4>
             <p class="text-gray-600">{{ service.description }}</p>
-            <a :href="service.link"
+            <!-- <a :href="service.link"
               class="text-blue-600 font-medium border-b-2 border-blue-600 mt-4 inline-block hover:text-blue-800">
               Read More
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -110,10 +110,10 @@ const isLargeScreen = computed(() => width.value >= 1024) // Tailwind 'lg' break
                 </div>
                 <h4 class="text-xl font-semibold mb-3">{{ service.title }}</h4>
                 <p class="text-gray-600">{{ service.description }}</p>
-                <a :href="service.link"
+                <!-- <a :href="service.link"
                   class="text-blue-600 font-medium border-b-2 border-blue-600 mt-4 inline-block hover:text-blue-800">
                   Read More
-                </a>
+                </a> -->
               </div>
             </div>
           </Slide>

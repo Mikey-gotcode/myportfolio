@@ -52,7 +52,7 @@ const aboutData = {
   freelance: "Available",
   role: "Fullstack Developer",
   bio: "I'm a full-stack developer with experience in MERN, Kotlin, and Laravel. I build interactive web and mobile applications, integrating real-time data, state management, and scalable backend services. My projects range from mapping applications with WebSockets to e-commerce platforms and financial transaction systems. I enjoy problem-solving, optimizing performance, and experimenting with new tech stacks to create efficient and user-friendly solutions.",
-  image: "/src/assets/img/about.jpeg",
+  image: "../../assets/img/about.jpeg",
   hireMeLink: "#",
   learnMoreLink: "#"
 };

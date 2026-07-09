@@ -23,7 +23,7 @@ const downloadResume = () => {
 
 onMounted(() => {
   if (typedRef.value) {
-    const typed_strings = "Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer";
+    const typed_strings = " Full Stack Developer, Web Designer, Web Developer, Mobile App Developer, Apps Designer, Apps Developer";
 
     new Typed(typedRef.value, {
       strings: typed_strings.split(", "),
@@ -62,7 +62,7 @@ onMounted(() => {
         </div>
 
         <button @click="downloadResume" class="mt-6 px-6 py-3 bg-teal-400 text-white rounded-full shadow-lg hover:bg-teal-700 hover:cursor-pointer transition">
-          <i class="ti-printer mr-2"></i> Downolad Resume
+          <i class="ti-printer mr-2"></i> Download Resume
         </button>
       </div>
     </div>
